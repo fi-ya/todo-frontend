@@ -5,27 +5,27 @@ import Link from 'next/link'
 import styles from '../styles/Home.module.css'
 
 const Home: NextPage = () => {
+
   return (
     <div className={styles.container}>
       <Head>
-        <title>My To Do App</title>
+        <title>To Do App</title>
         <meta name="description" content="A todo app" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
         <main className={styles.main}>
           <h1 className={styles.title}>
-            My To Do App
+            To Do App
           </h1>
 
           <p className={styles.description}>
-            Get started creating a to do!
+            Get more organised. Use a todo list.
           </p>
 
-          <h2>
-            &rarr; <Link href="/todos">To Do List</Link>
-          </h2>
+          <button className={styles.button}>
+             <Link href="/todos">To Do List</Link>
+          </button>
         </main>
-
 
       <footer className={styles.footer}>
         <a
